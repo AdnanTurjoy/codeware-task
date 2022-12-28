@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+const OrderItem = require("./orderItemModel")
 const Order = new mongoose.Schema({
   phone: {
     type: String,

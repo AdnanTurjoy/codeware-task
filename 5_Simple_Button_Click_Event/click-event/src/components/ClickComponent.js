@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+// STYLE
 const Button = styled.button`
   font-size: 1.5em;
   color: palevioletred;

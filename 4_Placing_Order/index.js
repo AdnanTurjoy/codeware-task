@@ -1,3 +1,9 @@
+/* 
+  Project Name: Placing Order
+  Author: Adel Md. Adnan
+  Date: 28.12.22
+*/
+
 const express = require("express");
 const connectDB = require("./database/connection");
 const app = express();
@@ -8,8 +14,12 @@ app.use(express.json());
 app.use(cors());
 require("dotenv").config();
 
+// ROUTE
 app.use("/api", orderItemRoute);
 app.use("/api", orderRoute);
+
+
+// CONNECTION
 app.listen(process.env.PORT || 8000, async () => {
   console.log("Server is Running");
   await connectDB();
